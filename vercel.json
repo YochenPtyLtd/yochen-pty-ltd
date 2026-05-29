@@ -3,9 +3,9 @@
   "framework": "nextjs",
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "yochen-pty-ltd.vercel.app" }],
-      "destination": "https://yochen.com.au/:path*",
+      "destination": "https://yochen.com.au/$1",
       "permanent": true
     }
   ]
