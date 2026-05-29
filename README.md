@@ -14,6 +14,31 @@ the AI OS — initializing this folder as a standalone repo isolates it.
 The AI OS repo's `.gitignore` already excludes everything outside its tracked
 roots, so this nested git repo does not conflict with AI OS.
 
+## Repository
+
+- GitHub: https://github.com/YochenPtyLtd/yochen-pty-ltd
+- Org owner: `yochen-admin` (dedicated GitHub user, holds the
+  `YochenPtyLtd` org)
+- Org member: `Kennysu0425` (Kenny's personal GitHub, day-to-day
+  contributor; Write role on this repo)
+- Commit author: `contact@yochen.com.au` (set via repo-local
+  `user.email`; mailbox is forwarded via Cloudflare Email Routing)
+
+Mirrors the Joy Truepath pattern (`JoyTruepath` org owned by
+`joytruepath-admin`). Strict entity ownership at the GitHub layer.
+
+### Infra layers (currently shared with Joy Truepath — TODO future split)
+
+- **Cloudflare** (DNS + Email Routing for yochen.com.au) lives under
+  the `kennysu.tw@gmail.com` Cloudflare account, same account that
+  hosts `joytruepath.com`. Each zone is independent; co-tenancy is
+  safe. Migrate to a Yochen-dedicated Cloudflare account when Yochen
+  starts operating.
+- **Vercel** project (when created) will live under `Kennysu0425`
+  personal Vercel scope (slug `true-path`, historical name), alongside
+  `truepath-global-pte-ltd`. Migrate to a Yochen-dedicated Vercel
+  account when Yochen starts operating.
+
 ## Current state
 
 - Australian Pty Ltd (ACN registered).
