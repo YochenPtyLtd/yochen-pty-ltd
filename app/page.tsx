@@ -52,8 +52,14 @@ export default function Home() {
       </section>
 
       <footer className="px-6 py-6 border-t border-neutral-200">
-        <div className="mx-auto max-w-3xl text-xs text-neutral-500">
-          © {year} Yochen Pty Ltd. All rights reserved.
+        <div className="mx-auto max-w-3xl flex items-center justify-between text-xs text-neutral-500">
+          <span>© {year} Yochen Pty Ltd. All rights reserved.</span>
+          <a
+            href="/privacy"
+            className="text-neutral-500 hover:text-neutral-900 transition-colors"
+          >
+            Privacy
+          </a>
         </div>
       </footer>
     </main>
